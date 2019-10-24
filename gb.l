@@ -1,5 +1,6 @@
+
 %%
-"int"     printf("< int_number , %s>\n" , yytext);
+[0-9]+    printf("< int_number , %s>\n" , yytext);
 "if"      printf("< if_kw , %s>\n" , yytext);
 "=+"      printf("< add , %s>\n" , yytext);
 "=-"      printf("< sub , %s>\n" , yytext);
@@ -13,6 +14,5 @@
 ";" printf("< semicolon , %s>\n", yytext);
 \n        ;
 .         ;
-
 
 %%
