@@ -7,6 +7,7 @@
 ">"       printf("< gra , %s>\n" , yytext);
 "<"       printf("< low , %s>\n" , yytext);
 "=="      printf("< equ , %s>\n" , yytext);
+"="       printf("< assignment , %s>\n" , yytext);
 [{}(),]   printf("< delimiter , %s>\n" , yytext);
 
 [_a-zA-Z][_a-zA-Z0-9]*  printf("< id , %s>\n" , yytext);
